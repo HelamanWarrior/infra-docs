@@ -1,0 +1,11 @@
+baseURL = "https://docs.plug-world.com"
+title = "Infra Docs"
+theme = "reader"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 10
+
