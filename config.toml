@@ -1,4 +1,4 @@
-baseURL = "https://helamanwarrior.github.io/infra-docs/"
+baseURL = "https://helamanwarrior.github.io/"
 title = "Infra Docs"
 theme = "reader"
 
