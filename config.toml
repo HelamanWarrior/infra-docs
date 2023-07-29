@@ -1,6 +1,8 @@
 baseURL = "https://helamanwarrior.github.io/infra-docs/"
+languageCode = "en-US"
 title = "Infra Docs"
 theme = "reader"
+canonifyURLs = true
 
 [menu]
   [[menu.main]]
