@@ -5,7 +5,9 @@ date: 2023-06-28
 
 ## Creating Restic repository
 
-`restic -r sftp:admin@192.168.1.40:/share/FreeNAS/ init`
+```bash
+restic -r sftp:admin@192.168.1.40:/share/FreeNAS/ init
+```
 
 This repository will be the centeral location for backups. The password is used for encryption.
 So I created my Restic repository on my backup machine. Set a password. And I'm off to the races.
