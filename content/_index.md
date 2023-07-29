@@ -9,6 +9,7 @@ Here lies all my infrastructure documentation for managing the home server stuff
 - [🔑 SSH keys](posts/ssh-keys)
 - [💾 Backup Managment](posts/backup-management)
 - [📁 Easy File Transfer](posts/easy-file-transfer)
+- [🕳️ Pihole DNS Setup](posts/pihole-dns-setup)
 
 [Application Dashboard](http://192.168.1.196:5050/)
 
