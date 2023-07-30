@@ -7,7 +7,9 @@
 
 	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
-	<link rel="stylesheet" href={{ "css/style.css" | relURL }} type="text/css" media="all" />
+	{{ $style := resources.Get "style.css" | minify }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="all" />
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>">
 
 	{{ with .OutputFormats.Get "rss" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
