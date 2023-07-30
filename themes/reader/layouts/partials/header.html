@@ -8,13 +8,12 @@
 	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
 	{{ $style := resources.Get "style.css" | minify }}
-	<link rel="preload" href={{ "fonts/firacode.woff2" | absURL }} as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href={{ "fonts/source-sans.woff2" | absURL }} as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href={{ "fonts/source-sans-bold.woff2" | absURL }} as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href={{ "fonts/vollkorn.woff2" | absURL }} as="font" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href={{ "fonts/source-sans.woff2" | absURL }} type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" as="font" href={{ "fonts/source-sans-bold.woff2" | absURL }} type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" as="font" href={{ "fonts/vollkorn.woff2" | absURL }} type="font/woff2" crossorigin="anonymous" />
 
 	<link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css" media="all" />
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>" />
 
 	{{ with .OutputFormats.Get "rss" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
