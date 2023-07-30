@@ -3,6 +3,7 @@ languageCode = "en-US"
 title = "Infra Docs"
 theme = "reader"
 canonifyURLs = true
+pygmentsUseClasses = false
 
 [menu]
   [[menu.main]]
@@ -10,4 +11,20 @@ canonifyURLs = true
     name = "Posts"
     url = "/posts"
     weight = 10
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'perldoc'
+    tabWidth = 4
 
