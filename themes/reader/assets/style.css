@@ -5,11 +5,45 @@
  */
 /* Body */
 
-@import "https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Vollkorn:wght@400&family=Source+Sans+Pro:wght@400;600&display=swap";
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  src: url('fonts/firacode.woff2') format('woff2'),
+    url('fonts/firacode.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/source-sans.woff2') format('woff2'),
+    url('fonts/source-sans.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/source-sans-bold.woff2') format('woff2'),
+    url('fonts/source-sans-bold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/vollkorn.woff2') format('woff2'),
+    url('fonts/vollkorn.woff') format('woff'),
+  font-display: swap;
+}
 
 html {
   font-size: 62.5%;
   font-family: "Source Sans Pro";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
